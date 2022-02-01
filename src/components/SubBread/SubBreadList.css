@@ -1,0 +1,9 @@
+.cardlist{
+    list-style-type: none;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+h2{
+    margin-left: 10px;
+}

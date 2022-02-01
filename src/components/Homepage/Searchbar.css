@@ -1,0 +1,17 @@
+#searchbar{
+    width:500px;
+    height:40px;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top:15px;
+    background-color: lightgray;
+   
+    
+}
+.search{
+    height:5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

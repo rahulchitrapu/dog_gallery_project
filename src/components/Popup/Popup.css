@@ -1,0 +1,60 @@
+
+.main_popup{
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 10px;
+
+}
+.wrapper{
+    background-color: white;
+    width: 600px;
+    height: 500px;
+    padding:10px;
+    padding-top: 0;
+    overflow: scroll;  
+}
+.popup_navbar{
+  background-color: rgb(174, 177, 176);
+  padding: 4px;
+  color: black;
+  text-align: center;
+  position: relative;
+  text-decoration: underline;
+  
+}
+img{
+    width: 120px;
+    height: 120px;
+    padding: 5px;  
+}
+.cancel{
+  color: red;
+  position:absolute;
+  font-size:25px;
+  top:10px;
+  right:2px;
+  margin-right:5px;
+  margin-top: 5px;
+  width:50px;
+  height:30px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.cancel:hover{
+  border: 1px solid white;
+  background-color: red;
+  color: whitesmoke;
+}
+.cancel{
+  position: absolute;
+  top: -5px;
+  right: 2px;
+}
+
+
