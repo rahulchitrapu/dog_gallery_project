@@ -19,7 +19,18 @@ function CustomSearch({handleClose,dogImages}) {
         return <option>{dog.label}</option>
     })
 
-    const handleSubmit = useEffect(() => {
+//     const handleSubmit = useEffect(() => {
+//         if(number && selectedOption){
+//         setRender(true)
+//         fetch(`https://dog.ceo/api/breed/${selectedOption}/images/random/${number}`)
+//             .then(response => response.json())
+//             .then(data => {
+              
+//                 setCustomImg(data.message);
+//             })
+//         }
+//     },[number,selectedOption])
+    const handleSubmit = () => {
         if(number && selectedOption){
         setRender(true)
         fetch(`https://dog.ceo/api/breed/${selectedOption}/images/random/${number}`)
@@ -29,7 +40,7 @@ function CustomSearch({handleClose,dogImages}) {
                 setCustomImg(data.message);
             })
         }
-    },[number,selectedOption])
+    }
     
     return (
     <div className="main_Popup">    
