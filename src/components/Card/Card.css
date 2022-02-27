@@ -1,4 +1,7 @@
-
+.card:hover{
+    transform: scale(1.1);
+    transition-delay: 2s ease;
+}
 
 .image{
     width: 150px;
