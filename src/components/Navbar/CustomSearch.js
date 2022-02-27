@@ -10,10 +10,12 @@ function CustomSearch({handleClose,dogImages}) {
     const handleOption = (dog) => {
         
         setOption(dog.target.value)
+        setRender(false)
     }
     const handleInput = (num) => {
         
         setNumber(num.target.value)
+        setRender(false)
     }
     let option = dogImages.map((dog) => {
         return <option>{dog.label}</option>
