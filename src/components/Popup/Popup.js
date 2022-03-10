@@ -13,18 +13,20 @@ function Popup({handleClose,clickedDog}) {
         fetch(`https://dog.ceo/api/breed/${clickedDog.label}/list`)
         .then(res=>res.json())
         .then(data=>{
+            // console.log(data);
             setSubBreadName(data.message);
         })
-   },[])
+   },[clickedDog.label])
    
    const capitalize=(str)=>{
     return str.charAt(0).toUpperCase() + str.slice(1);
     }
    
+   
     
     return (
         <div className='main_popup' >
-           <div className='wrapper'>
+           <div className={subBreadName.length===0?'nosub':'wrapper'}>
                 <div className='popup_navbar'>
                     
                     <h1 id='resultsfor_bread'>{capitalize(clickedDog.label)}</h1>
